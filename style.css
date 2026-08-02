@@ -13,6 +13,38 @@
 .logo{
     display: flex;
 }
+
+.banner{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.banner img{
+    display: block;
+    margin: 0px auto;
+    width: 97%;
+    height: 30vw;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.banner-img {
+    position: relative;
+}
+
+.banner-text{
+    position: absolute;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    top: 20%;
+    left: 50%;
+    z-index: 1;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -23,15 +55,15 @@
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
-    z-index: 3;
+    z-index: 2;
 }
 
 .navbar-links {
     display: flex;
     width: auto;
     padding: 10px;
-    gap : 20px;
-    font-size: 20px;
+    gap : 3vw;
+    font-size: 1.2vw;
     justify-content: space-around;
     align-items: center;
 }
@@ -48,9 +80,11 @@
     justify-content: space-between;
 }
 
+
 .brands-heading{
-    margin-top: 1vw;
-    padding: 10px;
+    margin-top: 4vw;
+    padding: 0px 10px ;
+    font-size: 2vw;
 }
 
 .brands-logo{
@@ -102,11 +136,289 @@
 
 
 .footer{
-    font-size: 3vw;
+    font-size: 2vw;
     padding: 20px;
     padding-left: 35px;
     margin: 0px;
     background-color: #1D232C;
     color: #E2E1E1;
 }
+
+
+/* contact-page */
+
+
+.contactpage__wrapper{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.contactpage__card{
+    color:#fff;
+    width:100%;
+    max-width:950px;
+    background:#1D232C;
+    padding:70px;
+    padding-right:80px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+.contactpage__header{
+    margin-bottom:30px;
+}
+
+.contactpage__header h1{
+    font-size:36px;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.contactpage__header p{
+    color:#666;
+    font-size:16px;
+}
+
+.contactpage__form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contactpage__inputgroup{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.contactpage__inputgroup label{
+    font-weight:600;
+    color:#fff;
+}
+
+.contactpage__inputgroup input,
+.contactpage__inputgroup textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #d6d6d6;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.contactpage__inputgroup input:focus,
+.contactpage__inputgroup textarea:focus{
+    border-color:#3b82f6;
+}
+
+.contactpage__inputgroup textarea{
+    resize:vertical;
+}
+
+.contactpage__button{
+    display:block;
+    padding:15px;
+    width:6vw;
+    border:none;
+    background:#3b82f6;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contactpage__button:hover{
+    background:#2563eb;
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+    .contactpage__card{
+        padding:30px;
+    }
+
+    .contactpage__header h1{
+        font-size:30px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+    .contactpage__card{
+        padding:20px;
+    }
+
+    .contactpage__header h1{
+        font-size:26px;
+    }
+
+    .contactpage__header p{
+        font-size:14px;
+    }
+
+    .contactpage__button{
+        width:100%;
+    }
+
+}
+
+
+
+
+/* 
+collection */
+
+
+  .layout{
+    display:flex;
+    min-height:100vh;
+  }
+
+  /* Sidebar */
+  .sidebar{
+    width:280px;
+    flex-shrink:0;
+    padding:30px 40px 30px 24px;
+    border-right:2px solid black;
+    margin-bottom:50px;
+  }
+  .sidebar h2{
+    font-size:34px;
+    font-weight:800;
+    margin:10px 0 20px 0;
+  }
+  .filter-group{
+    margin-bottom:40px;
+  }
+  .filter-option{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:14px;
+    font-size:22px;
+    cursor:pointer;
+    user-select:none;
+  }
+  .filter-option input[type="checkbox"]{
+    width:16px;
+    height:16px;
+    min-width:16px;
+    min-height:16px;
+    border:1.5px solid #000;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background:#fff;
+    cursor:pointer;
+    position:relative;
+    flex-shrink:0;
+    margin:0;
+    padding:0;
+  }
+  .filter-option input[type="checkbox"]:checked{
+    background:#000;
+  }
+  .filter-option input[type="checkbox"]:checked::after{
+    content:"";
+    position:absolute;
+    left:4px;
+    top:1px;
+    width:4px;
+    height:8px;
+    border:solid #fff;
+    border-width:0 2px 2px 0;
+    transform:rotate(45deg);
+  }
+  .filter-option label{
+    cursor:pointer;
+  }
+
+  /* Main content */
+  .main{
+    flex:1;
+    padding:30px 40px;
+  }
+  .search-bar{
+    position:relative;
+    margin-bottom:30px;
+  }
+  .search-bar input{
+    width:93%;
+    padding:14px 50px 14px 18px;
+    font-size:18px;
+    border:1.5px solid #000;
+    border-radius:6px;
+    outline:none;
+    color:#333;
+  }
+  .search-bar input::placeholder{
+    color:#999;
+  }
+  .search-icon{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    width:20px;
+    height:20px;
+    pointer-events:none;
+  }
+
+  .product-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px 40px;
+  }
+  .product-card{
+    cursor:pointer;
+  }
+  .product-image{
+    background:transparent;
+    aspect-ratio:1 / 1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    margin-bottom:14px;
+  }
+  .product-image img{
+    width:110%;
+    height:100%;
+    object-fit:contain;
+  }
+  .product-title{
+    font-size:26px;
+    font-weight:800;
+    margin:0 0 6px 0;
+  }
+  .product-price{
+    font-size:18px;
+    color:#111;
+    margin:0;
+  }
+
+  @media (max-width: 800px){
+    .layout{flex-direction:column;}
+    .sidebar{
+      width:100%;
+      border-right:none;
+      border-bottom:2px solid black;
+    }
+    .product-grid{
+      grid-template-columns:repeat(auto-fit, minmax(160px,1fr));
+      gap:20px;
+    }
+    .product-title{font-size:18px;}
+  }
 

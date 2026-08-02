@@ -3,42 +3,42 @@ const products = [
   {
     title: "Floral Summer Shirt",
     price: 220,
-    img: "",
+    img: "images/collection/image1.jpeg",
     occasion: "summer",
     color: "red"
   },
   {
     title: "Summer Green",
     price: 260,
-    img: "",
+    img: "images/collection/image2.jpeg",
     occasion: "summer",
     color: "green"
   },
   {
     title: "Party Floral Shirt",
     price: 399,
-    img: "",
+    img: "images/collection/image3.jpeg",
     occasion: "party",
     color: "blue"
   },
   {
     title: "Pink Floral Shirt",
     price: 240,
-    img: "",
+    img: "images/collection/image4.jpeg",
     occasion: "party",
     color: "red"
   },
   {
     title: "Navy Rose Shirt",
     price: 310,
-    img: "",
+    img: "images/collection/image5.jpeg",
     occasion: "beach",
     color: "blue"
   },
   {
     title: "Colorblock Shirt",
     price: 280,
-    img: "",
+    img: "images/collection/image6.jpeg",
     occasion: "beach",
     color: "white"
   }
