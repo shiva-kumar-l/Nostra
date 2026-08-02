@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shirt Store</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="collection.css">
+</head>
+<body>
+            <!-- navbar -->
+        <nav class="navbar">
+            <h1 class="logo">Nostra</h1>
+            <div class="navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="#">Collections</a></p>
+                <p class="navbar-link"><a href="./contactus.html">Contact Us</a></p>
+            </div>
+
+        </nav>
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="filter-group">
+      <h2>Occasion</h2>
+      <div class="filter-option">
+        <input type="checkbox" id="occ-summer">
+        <label for="occ-summer">Summer</label>
+      </div>
+      <div class="filter-option">
+        <input type="checkbox" id="occ-party">
+        <label for="occ-party">Party</label>
+      </div>
+      <div class="filter-option">
+        <input type="checkbox" id="occ-beach">
+        <label for="occ-beach">Beach</label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h2>Colors</h2>
+      <div class="filter-option">
+        <input type="checkbox" id="col-red">
+        <label for="col-red">Red</label>
+      </div>
+      <div class="filter-option">
+        <input type="checkbox" id="col-blue">
+        <label for="col-blue">Blue</label>
+      </div>
+      <div class="filter-option">
+        <input type="checkbox" id="col-white">
+        <label for="col-white">White</label>
+      </div>
+      <div class="filter-option">
+        <input type="checkbox" id="col-green">
+        <label for="col-green">Green</label>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="search">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+        <circle cx="11" cy="11" r="7"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Products injected by JS -->
+    </div>
+  </main>
+
+</div>
+
+<footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-box-1">
+                    <h2 class="headingText">Nostra</h2>
+                    <p>The Standard chunk of Lorem ipsum
+                        used since the 1500s is reprodused
+                        below for those interest</p>
+                </div>
+            </div>
+            <p class="subtitle">@ 2023 Nostra.com</p>
+        </div>
+</footer>
+
+<script src="collection.js"></script>
+
+</body>
+</html>
